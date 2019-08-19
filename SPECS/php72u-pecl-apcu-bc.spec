@@ -1,6 +1,6 @@
 %global pecl_name apcu-bc
 %global pecl_so_name apc
-%global php_base php72u
+%global php_base %{?_php_base}%{?!_php_base:php72u}
 %global ini_name  50-%{pecl_name}.ini
 %global with_zts 0%{?__ztsphp:1}
 
